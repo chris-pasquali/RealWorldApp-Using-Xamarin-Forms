@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms" xmlns:transformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+             mc:Ignorable="d"
+             x:Class="RealWorldApp.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <!--<ffimageloading:CachedImage HeightRequest="100"
+                                    WidthRequest="100"
+                                    Source="https://www.cycleworld.com/resizer/2vAjHPwMg-x4X_ucfDDlNehJCQE=/760x570/arc-anglerfish-arc2-prod-bonnier.s3.amazonaws.com/public/BLXCWAD3BVHPDFWIQO5PNMT5UA.jpg"
+                                    CacheType="All">
+            <ffimageloading:CachedImage.Transformations>
+                <transformations:CircleTransformation />
+            </ffimageloading:CachedImage.Transformations>
+        </ffimageloading:CachedImage>-->
+
+        <Entry Placeholder="Enter Username"
+               x:Name="EntUserName"/>
+        <Button Text="Save" 
+                x:Name="BtnSave"
+                Clicked="BtnSave_Clicked"/>
+        <Button Text="Retrieve" 
+                x:Name="BtnRetrieve"
+                Clicked="BtnRetrieve_Clicked"/>
+        <Label x:Name="LblUserName"/>
+    </StackLayout>
+
+</ContentPage>
